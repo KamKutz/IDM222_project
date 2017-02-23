@@ -1,52 +1,21 @@
-/* Grid system CSS */ 
-
 *{box-sizing: border-box;}
-
-.row {
-  overflow: auto;
-  margin-bottom: 16px;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-[class*="col-"] {
-  background-color: rgba(45, 157, 192, 0.5);
-  border: 1px solid #2d9dc0;
-  padding: 16px;
-  width: 100%;
-}
-
-@media screen and (min-width: 600px) {
-  [class*="col-"] {
-    background-color: rgba(242, 33, 56, 0.2);
-    border: 1px solid rgba(249, 38, 114, 1);
-  }
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-
-  [class*="col-"] {
-    float: left;
-  }
-}
-/* Grid system CSS ENDS */ 
-
-@media screen and (min-width: 320px) {
 	
 	html {
 		background-color: black;
+	}
+
+	/* nav */
+
+	.nav_wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		font-size: 1.7em;
+	}
+
+	.nav_wrap div {
+		margin: 20px 0;
 	}
 
 	/* homepage */
@@ -69,20 +38,6 @@
 		font-size: 1.3em; 
 	}
 
-	.nav_wrap {
-		text-align: center;
-		padding: 3em;
-	}
-
-	.nav_wrap ul li {
-		font-size: 2em;
-		list-style-type: none;
-	}
-
-	.nav_el {
-		padding-top: 0.8em;
-	}
-
 	p {
 		text-align: center;
 		color: #D4CB92;
@@ -96,10 +51,11 @@
 
 	#port_wrap a div img {
 		width: 85%;
-		height: 85%;
 	}
 
 	#port_wrap {
+		display: flex;
+		flex-direction: column;
 		text-align: center;
 	}
 
@@ -129,15 +85,34 @@
 		text-indent: 0.6em;
 		color: #D4CB92;
 	}
-}
 
 	.r_contents ul li {
 		list-style-type: none;
 	}
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
 	
+	.nav_wrap {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.nav_wrap div a {
+		font-size: 1.8em;
+	}
+
 	/* general */
 
 	.logo {
@@ -148,21 +123,8 @@
 		font-size: 2em; 
 	}
 
-	.nav_wrap {
-		text-align: center;
-		padding: 6em;
-	}
-
-	.nav_wrap ul li {
-		font-size: 3.4em;
-	}
-
 	.footer {
 		text-align: center;
-	}
-
-	.nav_el {
-		padding-top: 0.8em;
 	}
 
 	/* homepage */
@@ -206,6 +168,17 @@
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 960px) {
 	
 	/* general */ 
@@ -219,12 +192,11 @@
 	}
 
 	.nav_wrap {
-		text-align: center;
-		padding: 5em;
-	}
-
-	.nav_wrap ul li {
-		font-size: 3.4em;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 600px;
+		font-size: 1.7em;
+		margin: 0 auto;
 	}
 
 	.footer {
@@ -242,7 +214,7 @@
 		font-size: 1.75em;
 	}
 
-		/* resume page */ 
+	/* resume page */ 
 
 	.r_headers h3 {
 		text-align: center;
@@ -258,6 +230,10 @@
 
 	#port_wrap p {
 		font-size: 1.5em;
+	}
+
+	#port_wrap {
+
 	}
 
 }
