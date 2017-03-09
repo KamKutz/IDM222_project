@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Martel:600|Passion+One:700');
+
 *{box-sizing: border-box;}
 	
 	html {
-		background-color: black;
+		background-color: white;
 	}
 
 	/* nav */
@@ -11,11 +13,19 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+		background-color: black;
 		font-size: 1.7em;
 	}
 
+	.nav_wrap a {
+		text-decoration: none;
+		color: white;
+		font-family: 'Passion One', cursive;
+	}
+
+
 	.nav_wrap div {
-		margin: 20px 0;
+		margin: 1.25rem 0;
 	}
 
 	/* homepage */
@@ -26,6 +36,9 @@
 
 	#main_content p {
 		text-indent: 10%;
+		color: black;
+		font-family: 'Martel', serif;
+		text-align: left;
 	}
 
 	/* general */
@@ -35,12 +48,10 @@
 	}
 
 	.logo a {
-		font-size: 1.3em; 
-	}
-
-	p {
-		text-align: center;
-		color: #D4CB92;
+		font-size: 1.7em;
+		color: black;
+		font-family: 'Passion One', cursive;
+		text-decoration: none;
 	}
 
 	.footer {
@@ -57,37 +68,83 @@
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+		margin: 1rem 0 1rem 0;
+	}
+
+	.port_items p {
+		margin: .5rem 0 .5rem 0;
 	}
 
 	/* contact page */
 
 	#c_header {
-		text-align: center;
-		color: #D4CB92;
+		text-align: left;
+		color: black;
+		margin: 1rem 0 0 3rem;
 	}
 
 	#c_content ol li {
 		font-size: 1.2em;
-		text-align: center;
-		color: #D4CB92;
+		text-align: left;
+		color: black;
 		list-style-type: none;
+		margin: 0 0 0 3rem;
+	}
+
+	#c_content {
+		margin-bottom: 1rem;
 	}
 
 	/* resume page */ 
 
 	.r_headers h3 {
-		text-align: center;
+		font-family: 'Martel', serif;
 		font-size: 1.3em;
-		color: #D4CB92;
+		margin-left: 0.625rem;
+		color: white;
+	}
+
+	.r_headers {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: black;
+		width: 100%;
+		height: 2rem;
 	}
 
 	.r_contents {
 		text-indent: 0.6em;
-		color: #D4CB92;
+		margin: .7rem 0 .7rem 0;
+		color: black;
+		font-family: sans-serif;
+		margin: ;
 	}
 
 	.r_contents ul li {
 		list-style-type: none;
+		line-height: 1.3em;
+	}
+
+	.r_container {
+		margin: 1.5625rem 0 1.5625rem 0;
+		padding: 0 1.875rem 0 1.875rem;
+	}
+
+	.footer p {
+		font-family: 'Martel', serif;
+		font-size: .8em;
+		color: white;
+		padding-left: 2rem;
+		text-align: left;
+	}
+
+	.footer {
+		background-color: black;
+		height: 1.875rem;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
 	}
 
 
@@ -141,7 +198,7 @@
 	/* contact page */
 
 	#c_header h2 {
-		text-align: center;
+		text-align: left;
 		font-size: 2.25em;
 	}
 
@@ -152,8 +209,12 @@
 	/* resume page */ 
 
 	.r_headers h3 {
-		text-align: center;
 		font-size: 2em;
+	}
+
+	.r_headers {
+		height: 2.5rem;
+		margin-left: 2rem;
 	}
 
 	.r_contents ul li {
@@ -193,10 +254,11 @@
 
 	.nav_wrap {
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
 		width: 600px;
 		font-size: 1.7em;
 		margin: 0 auto;
+		width: 100%;
 	}
 
 	.footer {
@@ -216,13 +278,16 @@
 
 	/* resume page */ 
 
+	.r_headers {
+		display: flex;
+	}
+
 	.r_headers h3 {
-		text-align: center;
-		font-size: 2.5em;
+		font-size: 2.1em;
 	}
 
 	.r_contents ul li {
-		text-indent: 10em;
+		margin-left: .5em;
 		font-size: 1.2em;
 	}
 
@@ -234,6 +299,46 @@
 
 	#port_wrap {
 
+	}
+
+	#c_header {
+		display: flex;
+		align-items: center;
+	}
+
+	#c_header h2 {
+		text-align: left;
+	}
+
+	#c_content ol li {
+		text-align: left;
+	}
+
+	.resume:hover {
+		transform: scale(1.5);
+	}
+
+	.resume a:hover {
+		color: green;
+		transition: all 250ms ease-in-out;
+	}
+
+	.art:hover {
+		transform: scale(1.5);
+	}
+
+	.art a:hover {
+		color: blue;
+		transition: all 250ms ease-in-out;
+	}
+
+	.contact:hover {
+		transform: scale(1.5);
+	}
+
+	.contact a:hover {
+		color: red;
+		transition: all 250ms ease-in-out;
 	}
 
 }
