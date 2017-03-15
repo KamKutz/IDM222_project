@@ -45,11 +45,22 @@
 
 	.logo {
 		text-align: center;
+		height: 30vw;
+  		top: 0;
+  		width: 100%;
+  		display: flex;
+  		align-items: center;
+  		justify-content: center;
+  		background-image: url(../graphics/forest.jpg);
+	}
+
+	.logo h1 {
+		margin: 0 auto;
 	}
 
 	.logo a {
 		font-size: 1.7em;
-		color: black;
+		color: white;
 		font-family: 'Passion One', cursive;
 		text-decoration: none;
 	}
@@ -118,7 +129,6 @@
 		margin: .7rem 0 .7rem 0;
 		color: black;
 		font-family: sans-serif;
-		margin: ;
 	}
 
 	.r_contents ul li {
@@ -242,7 +252,7 @@
 
 @media screen and (min-width: 960px) {
 	
-	/* general */ 
+	/* general */  
 
 	.logo {
 		text-align: center;
@@ -315,30 +325,19 @@
 	}
 
 	.resume:hover {
-		transform: scale(1.5);
-	}
-
-	.resume a:hover {
-		color: green;
-		transition: all 250ms ease-in-out;
+		background-color: #5C946E;
+		transition: 400ms ease-in-out;
 	}
 
 	.art:hover {
-		transform: scale(1.5);
-	}
-
-	.art a:hover {
-		color: blue;
-		transition: all 250ms ease-in-out;
+		background-color: #63B4D1;
+		transition: 400ms ease-in-out;
 	}
 
 	.contact:hover {
-		transform: scale(1.5);
+		background-color: #90A955;
+		transition: 400ms ease-in-out;
 	}
 
-	.contact a:hover {
-		color: red;
-		transition: all 250ms ease-in-out;
-	}
 
 }
